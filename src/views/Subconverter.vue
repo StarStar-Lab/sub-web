@@ -249,10 +249,7 @@ export default {
 
       options: {
         clientTypes: {
-          "Clash新参数": "clash&new_name=true",
-          "ClashR新参数": "clashr&new_name=true",
-          Clash: "clash",
-          ClashR: "clashr",
+          Clash: "clash&new_name=true",
           Surge2: "surge&ver=2",
           Surge3: "surge&ver=3",
           Surge4: "surge&ver=4",
@@ -267,6 +264,7 @@ export default {
         },
         customBackend: {
           "localhost:25500 本地版": "http://localhost:25500/sub?",
+	  "subconverter-star.vercel.app":"https://subconverter-star.vercel.app/sub?"
           "sub-beta.now.sh (自动编译最新版本后端-测试）": "https://sub-beta.now.sh/sub?",
           "subcon.dlj.tf(subconverter作者提供-稳定)":
             "https://subcon.dlj.tf/sub?",
@@ -275,6 +273,7 @@ export default {
         },
         backendOptions: [
           { value: "http://localhost:25500/sub?" },
+          { value: "https://subconverter-star.vercel.app/sub?" },	  
           { value: "https://sub-beta.now.sh/sub?" },
           { value: "https://subcon.dlj.tf/sub?" },
           { value: "https://api.dler.io/sub?" },
